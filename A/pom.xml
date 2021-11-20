@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mavenDependencyDemo</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>A</artifactId>
+    <version>1.0</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+
+        <!-- Start：传递依赖，路径最近者优先。验证时打开注释 -->
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>B</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>D</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+        <!-- End：传递依赖，路径最近者优先。验证时打开注释 -->
+
+
+        <!-- Start：传递依赖，第一声明者优先。验证时打开注释 -->
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>C</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>D</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+        <!-- End：传递依赖，第一声明者优先。验证时打开注释 -->
+
+
+        <!-- Start：同一个文件内声明，后者覆盖前者。验证时打开注释 -->
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>X</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>X</artifactId>-->
+<!--            <version>2.0</version>-->
+<!--        </dependency>-->
+        <!-- End：同一个文件内声明，后者覆盖前者。验证时打开注释 -->
+
+
+        <!-- Start：dependencyManagement 版本锁定。验证时打开注释 -->
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--           <artifactId>C</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+        <!-- End：dependencyManagement 版本锁定。验证时打开注释 -->
+
+    </dependencies>
+
+</project>

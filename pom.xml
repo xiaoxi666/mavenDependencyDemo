@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>mavenDependencyDemo</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+        <module>A</module>
+        <module>B</module>
+        <module>C</module>
+        <module>D</module>
+        <module>X</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <!-- Start：dependencyManagement 版本锁定。验证时打开注释 -->
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
+<!--            <dependency>-->
+<!--                <groupId>org.example</groupId>-->
+<!--                <artifactId>X</artifactId>-->
+<!--                <version>2.0</version>-->
+<!--            </dependency>-->
+
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
+    <!-- End：dependencyManagement 版本锁定。验证时打开注释 -->
+
+</project>
