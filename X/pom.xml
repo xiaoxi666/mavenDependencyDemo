@@ -10,6 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>X</artifactId>
+    <!-- 这两个版本的 X，提前install到本地，就可以继续做实验了 -->
+<!--    <version>1.0</version>-->
     <version>2.0</version>
 
     <properties>
